@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Crops</title>
+    <style>
+        /* General Page Styling */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: url("rainy crops product pg.png") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Header */
+        h1 {
+            font-size: xxx-large;
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        /* Search and Sort */
+        .search-sort {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 0 20px;
+        }
+
+        #searchBar {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #sortOptions {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Crops Grid */
+        .crops-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Crop Card */
+        .crop-card {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            gap: 15px;
+            width: 350px;
+        }
+
+        .crop-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+        }
+
+        .crop-info h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .crop-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Button */
+        .crop-info button {
+            padding: 8px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .crop-info button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Available Crops</h1>
+    <div class="search-sort">
+        <input type="text" id="searchBar" placeholder="Search crops..." style="margin-left: 114px;">
+        <select id="sortOptions" style="margin-right: 157px;">
+            <option value="default">Sort by</option>
+            <option value="price">Price</option>
+            <option value="name">Name</option>
+        </select>
+    </div>
+    <div class="crops-grid">
+        <div class="crop-card">
+            <img src="https://sp.yimg.com/ib/th?id=OIP.3baqFp-mIcS4QMbYVgFoGgHaE8&pid=Api&w=148&h=148&c=7&dpr=2&rs=1" alt="Green Chillies">
+            <div class="crop-info">
+                <h2>Green Chillies</h2>
+                <p>PACK OF 2 (QTY 2 * 10 GMS)</p>
+                <p>₹ 257 (23% OFF)</p>
+                <button>For More Info</button>
+            </div>
+        </div>
+        <div class="crop-card">
+            <img src="https://up.yimg.com/ib/th?id=OIP.AsMkpw6PAZP8nX6JmyrxEQHaFI&pid=Api&rs=1&c=1&qlt=95&w=165&h=114" alt="Brinjal Seeds">
+            <div class="crop-info">
+                <h2>VNR 212 BRINJAL SEEDS</h2>
+                <p>PACK OF 2 (QTY 2 * 10 GMS)</p>
+                <p>₹ 257 (23% OFF)</p>
+                <button>For More Info</button>
+            </div>
+        </div>
+        <div class="crop-card">
+            <img src="https://up.yimg.com/ib/th?id=OIP.BVpD-HTUjp5-GXNfYB7J-wHaE6&pid=Api&rs=1&c=1&qlt=95&w=166&h=110" alt="Radish">
+            <div class="crop-info">
+                <h2>Radish</h2>
+                <p>PACK OF 2 (QTY 2 * 10 GMS)</p>
+                <p>₹ 257 (23% OFF)</p>
+                <button>For More Info</button>
+            </div>
+        </div>
+        <div class="crop-card">
+            <img src="https://up.yimg.com/ib/th?id=OIP.6OHma8LQfF0iUNXa5RoKkQHaGS&pid=Api&rs=1&c=1&qlt=95&w=138&h=117" alt="Cucumber">
+            <div class="crop-info">
+                <h2>Cucumber</h2>
+                <p>PACK OF 2 (QTY 2 * 10 GMS)</p>
+                <p>₹ 257 (23% OFF)</p>
+                <button>For More Info</button>
+            </div>
+        </div>
+        <div class="crop-card">
+            <img src="https://up.yimg.com/ib/th?id=OIP.ayjhsXM80N___cl-3y8qvQHaHa&pid=Api&rs=1&c=1&qlt=95&w=118&h=118" alt="Beans">
+            <div class="crop-info">
+                <h2>Beans</h2>
+                <p>PACK OF 2 (QTY 2 * 10 GMS)</p>
+                <p>₹ 257 (23% OFF)</p>
+                <button>For More Info</button>
+            </div>
+        </div>
+        <div class="crop-card">
+            <img src="https://up.yimg.com/ib/th?id=OIP.hqJmRbkiTMLrZ2OBfa-ZmgHaE7&pid=Api&rs=1&c=1&qlt=95&w=161&h=107" alt="Tomato">
+            <div class="crop-info">
+                <h2>Tomato</h2>
+                <p>PACK OF 2 (QTY 2 * 10 GMS)</p>
+                <p>₹ 257 (23% OFF)</p>
+                <button>For More Info</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
